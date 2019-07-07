@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>date and time</title>
+</head>
+<body>
+
+	<h1>Date and time</h1>
+	<button onclick="document.getElementById('i1').innerHTML=Date()">click Me</button>
+	<p id="i1"></p>
+	
+	<button onclick="document.getElementById('i2').innerHTML='jai ho'" >change</button>
+	<p id="i2">jai mata di</p>
+
+	<button onclick="document.getElementById('i3').style.display='none'" >invisible</button>
+	<p id="i3">didi tera dewar diwana</p>
+
+	<p style="display: none;" id="i4">its magic</p>
+
+	<button onclick="document.getElementById('i4').style.display='block'">show</button>
+	
+
+	<img src="fb.png" height="40px" onmouseover="fun(this)" onmouseout="fun1(this)">
+	<br>
+	<input id="i5" type="text" onblur="upper()">
+	<br>
+	<br>
+	<input id="i6" type="text" onblur="lower()">
+
+	<script>
+		function fun(x)
+		{
+			x.style.height="80px";
+			x.style.width="80px";
+		}
+			function fun1(x)
+		{
+			x.style.height="20px";
+			x.style.width="20px";
+		}
+		function upper()
+		{
+			var a=document.getElementById("i5");
+			a.value=a.value.toUpperCase();
+		}
+		function lower()
+		{
+			var a=document.getElementById("i6");
+			a.value=a.value.toLowerCase();
+		}
+		var a=[name="Rahul",age="20"];
+	</script>
+	
+
+	
+
+
+
+
+
+</body>
+</html>
